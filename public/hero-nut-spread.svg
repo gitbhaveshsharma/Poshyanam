@@ -1,0 +1,34 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nut spread ingredients with jar">
+  <rect width="1600" height="1200" fill="#FFF9F1"/>
+  <circle cx="1180" cy="520" r="330" fill="#EADBC8"/>
+  <ellipse cx="1210" cy="920" rx="300" ry="58" fill="#3A2E24" fill-opacity="0.14"/>
+  <path d="M1042 278C1042 251.49 1063.49 230 1090 230H1332C1358.51 230 1380 251.49 1380 278V336H1042V278Z" fill="#3F6B3C"/>
+  <rect x="1016" y="322" width="390" height="570" rx="72" fill="#E6C29D"/>
+  <rect x="1064" y="452" width="294" height="302" rx="34" fill="#FFF9F1"/>
+  <text x="1211" y="565" text-anchor="middle" fill="#3A2E24" font-family="Georgia, serif" font-size="70" font-weight="700">Poshyanam</text>
+  <text x="1211" y="624" text-anchor="middle" fill="#3F6B3C" font-family="Arial, sans-serif" font-size="33" font-weight="700">Complete Nourishment</text>
+  <path d="M704 815C780 745 859 721 940 743C856 792 775 819 704 815Z" fill="#3F6B3C"/>
+  <path d="M1415 286C1482 278 1530 302 1560 357C1497 358 1448 334 1415 286Z" fill="#3F6B3C"/>
+  <g fill="#A45D2A">
+    <ellipse cx="728" cy="910" rx="56" ry="34" transform="rotate(-16 728 910)"/>
+    <ellipse cx="833" cy="945" rx="48" ry="30" transform="rotate(22 833 945)"/>
+    <ellipse cx="1482" cy="820" rx="54" ry="35" transform="rotate(17 1482 820)"/>
+    <ellipse cx="920" cy="244" rx="44" ry="28" transform="rotate(-20 920 244)"/>
+  </g>
+  <g fill="#B48343">
+    <ellipse cx="626" cy="755" rx="42" ry="62" transform="rotate(37 626 755)"/>
+    <ellipse cx="1518" cy="652" rx="38" ry="58" transform="rotate(-32 1518 652)"/>
+    <ellipse cx="844" cy="332" rx="36" ry="54" transform="rotate(19 844 332)"/>
+  </g>
+  <g fill="#6D8F45">
+    <ellipse cx="1455" cy="423" rx="37" ry="55" transform="rotate(-48 1455 423)"/>
+    <ellipse cx="785" cy="664" rx="34" ry="52" transform="rotate(54 785 664)"/>
+    <ellipse cx="1500" cy="980" rx="38" ry="58" transform="rotate(51 1500 980)"/>
+  </g>
+  <g fill="#7F5737">
+    <circle cx="668" cy="990" r="34"/>
+    <circle cx="916" cy="1020" r="29"/>
+    <circle cx="1430" cy="930" r="31"/>
+    <circle cx="770" cy="230" r="27"/>
+  </g>
+</svg>
