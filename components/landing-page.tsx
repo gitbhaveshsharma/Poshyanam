@@ -86,6 +86,10 @@ export function LandingPage() {
   );
 
   const addToCart = (product: Product) => {
+    if (product.availability === "testing") {
+      return;
+    }
+
     setCartItems((currentItems) => {
       const existingItem = currentItems.find(
         (item) => item.productId === product.id,
@@ -213,17 +217,23 @@ export function LandingPage() {
 
             <div className="product-grid">
               {products.map((product) => (
-                <article className="product-card" key={product.id}>
+                <article
+                  className={`product-card ${
+                    product.availability === "testing"
+                      ? "product-card-muted"
+                      : ""
+                  }`}
+                  key={product.id}
+                >
                   <div className="product-media">
                     <span className="badge">{product.badge}</span>
                     <Image
                       alt={product.imageAlt}
                       className="product-image"
-                      height={300}
+                      fill
                       priority={product.id === "classic-spread"}
-                      sizes="(max-width: 980px) 70vw, 300px"
+                      sizes="(max-width: 980px) 100vw, 33vw"
                       src={product.image}
-                      width={300}
                     />
                   </div>
                   <div className="product-body">
@@ -248,10 +258,13 @@ export function LandingPage() {
                       </div>
                       <button
                         className="button button-primary"
+                        disabled={product.availability === "testing"}
                         type="button"
                         onClick={() => addToCart(product)}
                       >
-                        Add to Cart
+                        {product.availability === "testing"
+                          ? product.unavailableLabel
+                          : "Add to Cart"}
                       </button>
                     </div>
                   </div>

@@ -40,7 +40,7 @@ export const products: Product[] = [
     description: "Perfect blend of nutritious nuts with dates and figs.",
     weight: "300g",
     tags: ["High Protein", "No Sugar", "Natural"],
-    price: 349,
+    price: 299,
     originalPrice: 499,
   },
   {
@@ -49,12 +49,14 @@ export const products: Product[] = [
     shortLabel: "Deluxe",
     image: "/poshyanam-hero-natural-nutrition-spread.png",
     imageAlt: "Poshyanam natural nutrition spread jar",
-    badge: "Premium",
+    badge: "Testing & R&D",
     description: "Premium mix with extra pistachios for enhanced flavor.",
     weight: "400g",
     tags: ["Rich Flavor", "Fortified", "Creamy"],
     price: 549,
     originalPrice: 799,
+    availability: "testing",
+    unavailableLabel: "Under R&D",
   },
   {
     id: "bundle-pack",
@@ -66,7 +68,7 @@ export const products: Product[] = [
     description: "Get three jars for the whole family.",
     weight: "900g Total",
     tags: ["Value Pack", "Family Size", "Save More"],
-    price: 899,
+    price: 799,
     originalPrice: 1497,
   },
 ];

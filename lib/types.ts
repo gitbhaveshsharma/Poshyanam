@@ -10,6 +10,8 @@ export type Product = {
   tags: string[];
   price: number;
   originalPrice: number;
+  availability?: "available" | "testing";
+  unavailableLabel?: string;
 };
 
 export type CartItem = {
