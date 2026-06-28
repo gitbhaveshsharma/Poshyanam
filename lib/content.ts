@@ -53,8 +53,6 @@ export const products: Product[] = [
     description: "Premium mix with extra pistachios for enhanced flavor.",
     weight: "400g",
     tags: ["Rich Flavor", "Fortified", "Creamy"],
-    price: 549,
-    originalPrice: 799,
     availability: "testing",
     unavailableLabel: "Under R&D",
   },

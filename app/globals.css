@@ -473,6 +473,11 @@ h3 {
   text-decoration: line-through;
 }
 
+.price-na {
+  color: var(--color-body);
+  font-size: 1.2rem;
+}
+
 .why-grid {
   display: grid;
   gap: 22px;

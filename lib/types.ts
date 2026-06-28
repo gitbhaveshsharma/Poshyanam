@@ -8,8 +8,8 @@ export type Product = {
   description: string;
   weight: string;
   tags: string[];
-  price: number;
-  originalPrice: number;
+  price?: number;
+  originalPrice?: number;
   availability?: "available" | "testing";
   unavailableLabel?: string;
 };

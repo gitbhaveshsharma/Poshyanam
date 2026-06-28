@@ -249,12 +249,20 @@ export function LandingPage() {
                     </div>
                     <div className="product-footer">
                       <div className="price" aria-label="Product price">
-                        <span className="sale-price">
-                          {formatCurrency(product.price)}
-                        </span>
-                        <span className="mrp">
-                          {formatCurrency(product.originalPrice)}
-                        </span>
+                        {product.price ? (
+                          <>
+                            <span className="sale-price">
+                              {formatCurrency(product.price)}
+                            </span>
+                            {product.originalPrice ? (
+                              <span className="mrp">
+                                {formatCurrency(product.originalPrice)}
+                              </span>
+                            ) : null}
+                          </>
+                        ) : (
+                          <span className="sale-price price-na">N/A</span>
+                        )}
                       </div>
                       <button
                         className="button button-primary"
@@ -452,7 +460,8 @@ function CartDrawer({
                   <div>
                     <p className="cart-line-title">{product.name}</p>
                     <p className="cart-line-meta">
-                      {product.weight} · {formatCurrency(product.price)}
+                      {product.weight} ·{" "}
+                      {product.price ? formatCurrency(product.price) : "N/A"}
                     </p>
                     <div className="quantity-row">
                       <div
