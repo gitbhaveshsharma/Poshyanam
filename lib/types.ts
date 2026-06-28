@@ -2,6 +2,8 @@ export type Product = {
   id: string;
   name: string;
   shortLabel: string;
+  image: string;
+  imageAlt: string;
   badge: string;
   description: string;
   weight: string;

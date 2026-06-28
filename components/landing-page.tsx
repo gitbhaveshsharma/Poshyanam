@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   ArrowRight,
   Check,
@@ -168,7 +169,7 @@ export function LandingPage() {
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-inner">
-            <div>
+            <div className="hero-content">
               <p className="eyebrow">{hero.eyebrow}</p>
               <h1 id="hero-title">{hero.title}</h1>
               <p className="hero-copy">{hero.description}</p>
@@ -180,14 +181,6 @@ export function LandingPage() {
                 <a className="button button-secondary" href="#story">
                   {hero.secondaryAction}
                 </a>
-              </div>
-            </div>
-            <div className="hero-product" aria-hidden="true">
-              <div className="jar-visual">
-                <div className="jar-label">
-                  <strong>{brand.name}</strong>
-                  <span>{brand.tagline}</span>
-                </div>
               </div>
             </div>
           </div>
@@ -223,9 +216,15 @@ export function LandingPage() {
                 <article className="product-card" key={product.id}>
                   <div className="product-media">
                     <span className="badge">{product.badge}</span>
-                    <div className="mini-jar" aria-hidden="true">
-                      <span className="mini-label">{product.shortLabel}</span>
-                    </div>
+                    <Image
+                      alt={product.imageAlt}
+                      className="product-image"
+                      height={300}
+                      priority={product.id === "classic-spread"}
+                      sizes="(max-width: 980px) 70vw, 300px"
+                      src={product.image}
+                      width={300}
+                    />
                   </div>
                   <div className="product-body">
                     <h3>{product.name}</h3>
@@ -429,9 +428,14 @@ function CartDrawer({
               }
               return (
                 <div className="cart-line" key={item.productId}>
-                  <div className="cart-thumb" aria-hidden="true">
-                    {product.shortLabel}
-                  </div>
+                  <Image
+                    alt=""
+                    aria-hidden="true"
+                    className="cart-thumb-image"
+                    height={64}
+                    src={product.image}
+                    width={64}
+                  />
                   <div>
                     <p className="cart-line-title">{product.name}</p>
                     <p className="cart-line-meta">
